@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa Final</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://i.imgur.com/GeIC2Ti.jpg'); /* Imagem fofa */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Animação de fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: slideUp 2s ease-out;
+        }
+
+        /* Animação de slide-up */
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0 0 20px;
+            animation: textZoom 1.5s ease-in-out;
+        }
+
+        /* Animação de zoom para o texto */
+        @keyframes textZoom {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 1.8em;
+            margin: 10px 0;
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        /* Animação de fade-in para o texto */
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .heart {
+            font-size: 5em;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+            color: #ff69b4; /* Pink Heart */
+        }
+
+        /* Animação de pulsação */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff85c2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Surpresa Final 🌟</h1>
+        <p>Você chegou ao fim da caça ao tesouro! 🎉</p>
+        <p>Quero que você saiba que cada momento foi criado com muito carinho e amor. ❤️</p>
+        <p>Você é a razão do meu sorriso todos os dias. Eu te amo infinitamente! 🌹</p>
+        <div class="heart">💖</div>
+        <button class="button" onclick="alert('Te amo muito!')">Clique aqui para uma última surpresa</button>
+    </div>
+</body>
+</html>
